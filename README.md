@@ -105,6 +105,24 @@ The bot does not acknowledge the injection. Responding with "I am not a customer
 
 ---
 
+## Repository Structure
+
+```
+grid07-ai/
+├── app.py                 # Streamlit UI (all 3 phases)
+├── personas.py            # Bot persona definitions
+├── tools.py               # mock_searxng_search @tool
+├── config.py              # Environment variable loader
+├── logs/
+│   ├── phase1_output.md
+│   ├── phase2_output.md
+│   └── phase3_output.md
+├── requirements.txt
+└── README.md
+```
+
+---
+
 ## Author
 
 Bindu S Reddy — [GitHub](https://github.com/Bindu134) · [LinkedIn](https://linkedin.com/in/bindu-s-reddy-51704a229)
