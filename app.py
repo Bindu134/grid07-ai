@@ -222,7 +222,7 @@ def mock_search(query: str) -> str:
 
 def get_llm(api_key: str):
     from langchain_groq import ChatGroq
-    return ChatGroq(api_key=api_key, model="llama3-8b-8192", temperature=0.8)
+    return ChatGroq(api_key=api_key, model="llama-3.1-8b-instant", temperature=0.8)
 
 
 def run_langgraph_streaming(bot_id: str, persona: str, api_key: str):
