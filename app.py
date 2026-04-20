@@ -283,7 +283,7 @@ def generate_defense_reply(bot_persona, parent_post, comment_history, human_repl
     from langchain_groq import ChatGroq
     from langchain_core.messages import SystemMessage, HumanMessage
 
-    llm = ChatGroq(api_key=api_key, model="llama3-8b-8192", temperature=0.7)
+    llm = ChatGroq(model="llama-3.3-70b-versatile", api_key=api_key)
 
     thread_context = "\n".join(f"[{c['author']}]: {c['content']}" for c in comment_history)
 
